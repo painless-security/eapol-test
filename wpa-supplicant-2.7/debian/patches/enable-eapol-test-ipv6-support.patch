@@ -1,0 +1,10 @@
+Enable IPv6 support for eapol_test
+--- a/wpa_supplicant/defconfig
++++ b/wpa_supplicant/defconfig
+@@ -593,3 +593,6 @@
+ # Opportunistic Wireless Encryption (OWE)
+ # Experimental implementation of draft-harkins-owe-07.txt
+ #CONFIG_OWE=y
++
++# Enable IPv6 for eapol_test
++CONFIG_IPV6=y
