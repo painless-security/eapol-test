@@ -9,14 +9,7 @@ Homepage: http://w1.fi/wpa_supplicant/
 #Vcs-Browser: https://salsa.debian.org/debian/wpa-supplicant
 #Vcs-Git: https://salsa.debian.org/debian/wpa-supplicant.git
 
-Package: wpa-supplicant
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: The eapol_test utility for testing FreeRADIUS
- This packages the eapol_test utility from the wpa_supplicant
- project.
-
-Package: eapol-test
+Package: psec-eapol-test
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: The eapol_test utility for testing FreeRADIUS
