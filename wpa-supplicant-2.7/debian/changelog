@@ -1,3 +1,9 @@
+wpa-supplicant (2.7-2) unstable; urgency=medium
+
+  * Add Jenkinsfile for package build
+
+ -- Jennifer Richards <jennifer@painless-security.com>  Thu, 12 Sep 2019 14:51:10 -0400
+
 wpa-supplicant (2.7-1) unstable; urgency=medium
 
   * Initial release
