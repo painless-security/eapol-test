@@ -16,6 +16,7 @@ pipeline {
     stage('Initialization') {
       steps {
         sh label: 'Update build environment', script: 'sudo cowbuilder update --basepath="${BASEPATH}"'
+        sh label: 'Create result directory', script: 'mkdir -p "${BUILDRESULT}"'
       }
     }
     
