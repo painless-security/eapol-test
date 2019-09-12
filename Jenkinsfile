@@ -23,15 +23,15 @@ pipeline {
       steps {
         dir(env.SRC_DIR) {
           sh label: 'Tag build in changelog',
-             script: 'dch --local "+${BUILD_NUMBER}~" \
-                          --distribution "unstable" \
-                          "Build ${BUILD_NUMBER}"
+             script: '''dch --local "+${BUILD_NUMBER}~" \
+                            --distribution "unstable" \
+                            "Build ${BUILD_NUMBER}"'''
           
           sh label: 'Build package',
-             script: 'pdebuild --pbuilder cowbuilder \
-                               --buildresult "${BUILDRESULT}" \
-                               -- \
-                               --basepath "${BASEPATH}"
+             script: '''pdebuild --pbuilder cowbuilder \
+                                 --buildresult "${BUILDRESULT}" \
+                                 -- \
+                                 --basepath "${BASEPATH}"'''
         }
       }
     }
