@@ -9,7 +9,7 @@ pipeline {
     SRC_DIR = """${sh(
       returnStdout: true,
       script: '/bin/ls -d wpa-supplicant-*'
-    )}"""
+    )}""".trim()
   }
   
   stages {
