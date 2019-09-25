@@ -12,10 +12,10 @@ pipeline {
     BUILDRESULT = "${env.WORKSPACE}/result"
 
     // Find the source directory dynamically so we can use a dir() step later
-    SRC_DIR = '''${sh(
+    SRC_DIR = """${sh(
       returnStdout: true,
       script: '/bin/ls -d wpa-supplicant-*'
-    )}'''.trim()
+    )}""".trim()
   }
   
   // Define build stages. These run sequentially.
